@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background: #eef;
+}
+.app-shell {
+  width: 900px;
+  margin: 0 auto;
+  padding: 8px;
+}
+header h1 {
+  font-size: 14px;
+}
+.tag {
+  color: #666;
+  font-size: 11px;
+}
+.note-form input,
+.note-form textarea {
+  width: 100%;
+  margin-bottom: 4px;
+}
+.note-list li {
+  background: white;
+  margin: 8px 0;
+  padding: 8px;
+  list-style: none;
+}
+.summary-box {
+  margin-top: 8px;
+  padding: 8px;
+  background: #ffe;
+}
+.toolbar button {
+  font-size: 10px;
+}

@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>NoteFlow Health Check — Preview</title>
+    <style>
+      body {
+        font-family: Georgia, serif;
+        max-width: 900px;
+        margin: 2rem auto;
+        line-height: 1.5;
+        color: #111;
+      }
+      h1 {
+        font-size: 1.6rem;
+      }
+      table {
+        border-collapse: collapse;
+        width: 100%;
+        margin: 1rem 0;
+      }
+      th,
+      td {
+        border: 1px solid #ccc;
+        padding: 0.4rem 0.6rem;
+        text-align: left;
+      }
+      .crit {
+        color: #b91c1c;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>NoteFlow — AI App Launch Rescue (Sample Report)</h1>
+    <p>Constructed demo app. Findings below were verified with static scan, Lighthouse, and automated tests.</p>
+    <table>
+      <tr>
+        <th>Severity</th>
+        <th>Finding</th>
+        <th>Status</th>
+      </tr>
+      <tr>
+        <td class="crit">Critical</td>
+        <td>API key exposed via VITE_OPENAI_API_KEY</td>
+        <td>Fixed in after/</td>
+      </tr>
+      <tr>
+        <td class="crit">Critical</td>
+        <td>OpenAI called from browser</td>
+        <td>Fixed in after/</td>
+      </tr>
+      <tr>
+        <td>High</td>
+        <td>XSS via dangerouslySetInnerHTML</td>
+        <td>Fixed in after/</td>
+      </tr>
+      <tr>
+        <td>Medium</td>
+        <td>No auth / shared notes</td>
+        <td>Fixed in after/</td>
+      </tr>
+    </table>
+  </body>
+</html>
