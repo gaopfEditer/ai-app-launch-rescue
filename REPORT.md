@@ -63,7 +63,7 @@ Static scan (`node scripts/health-scan.mjs before`) reported **7 findings**; the
 |---|---|
 | **Where** | `before/server/index.js` |
 | **Risk** | Abuse can spike cost or deny service. |
-| **Fix** | `express-rate-limit` on `/api/ai/summarize` (10 req/min) in `after/server/app.ts`. |
+| **Fix** | `express-rate-limit` on `/api/ai/summarize` (10 req/min) with `trust proxy` for correct client IP behind Vercel in `after/server/app.ts`. |
 
 ### 7. Permissive CORS — **Medium**
 

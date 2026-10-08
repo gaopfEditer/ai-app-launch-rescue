@@ -10,6 +10,8 @@ import { loginSchema, noteSchema, registerSchema, summarizeSchema } from './vali
 
 export function createApp(db: Database.Database) {
   const app = express();
+  // Vercel (and other reverse proxies) set X-Forwarded-For; trust one hop so req.ip and rate limits are per client.
+  app.set('trust proxy', 1);
 
   app.use(
     helmet({
