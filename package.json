@@ -1,0 +1,12 @@
+{
+  "name": "ai-app-launch-rescue",
+  "private": true,
+  "scripts": {
+    "scan:before": "node scripts/health-scan.mjs before",
+    "scan:after": "node scripts/health-scan.mjs after",
+    "screenshots:before": "node scripts/capture-before-screenshots.mjs"
+  },
+  "devDependencies": {
+    "playwright": "^1.49.1"
+  }
+}
